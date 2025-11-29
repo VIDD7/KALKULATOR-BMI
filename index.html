@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KALKULATOR BMI</title>
+  <style type="text/css">
+    @import url(styles.css);
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form-input" onsubmit="return false;">
+      <h2>KALKULATOR BMI</h2>
+      <div class="input-data">
+        <label><strong>Berat Badan (Kg)</strong></label>
+        <input type="number" placeholder="Masukan berat badan kamu" id="beratBadan" required>
+      </div>
+      <div class="input-data">
+        <label><strong>Tinggi Badan (Cm)</strong></label>
+        <input type="number" placeholder="Masukan tinggi badan kamu" id="tinggiBadan" required>
+      </div>
+      <div class="input-data">
+        <label><strong>Umur (Tahun)</strong></label>
+        <input type="number" placeholder="Masukan umur kamu saat ini" id="umur" required>
+      </div>
+      <div class="aksi">
+        <button type="button" class="btn-hitung" onclick="hitungBMI()">Hitung BMI</button>
+        <button type="button" class="btn-reset" onclick="resetForm()">Reset</button>
+      </div>
+      <section class="result-section">
+        <div id="result-bmi"></div>
+      </section>
+      <div class="footer-form">
+        <p class="hakcipta">&copy; David Guntoro 2025</p>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="main.js"></script>
+</body>
+</html>
